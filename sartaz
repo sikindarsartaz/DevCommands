@@ -1,0 +1,66 @@
+mkdir				:	mkdir
+cd 				:	to move inside the directory
+cd ..				:	to move back 
+mkdir -p  (already created A) A/B/C/D	: parent directory
+rmdir				:	to delete the directory
+cat >				:	to create a file  blank/.extension files
+cat >>				:	to edit the file  
+vi 				:	stream editer
+esc+I				:	move to insert text mode
+esc+:wq!			:	to save the edited text  in VI
+rm				:	to remove file	
+ctrl+d				:	save the created file
+touch 				:	to view the file
+ls				:	list all files/dir
+ls -l				:	long list  of output  
+ls -ld				:	permissions of a directory
+ls -s				:	list the files with their size
+ls -ltr				:	list all the files/dirs.  Recent first older last
+ls -a				:	to see hidden files/dir
+chmod  “654”			:	to make numeric permissions
+manual Permissions
+read        = 4
+write       =2
+execute = 1
+more 				:	to view the  complete file 
+less				:	to view the complete file
+head 				:	to view top 10 lines
+head -5				:	to view the particular line of 5thline data 
+tail 				:	to view bottom 10lines
+wc  (word count)	
+wc -c				:	count of the characters in a  file
+wc -l				:	count of lines in a file
+wc -w				:	count of words in a file	
+Cut -c5 				:	to  cut the specific character 5 in a file
+Cut -c5-c10			:	to cut the 5th to 10th characters
+Diff				:	differences between two files
+Sdiff				:	differences between two files side by side
+Cmp				:	compare between two files
+Uniq 				:	uniq words 
+tr “(a-z)” “(A-Z)” <filename.ext 	:		to translate  small letters to capitals
+sort 				:	sort files as alphabetical order
+Grep
+grep -w ‘word’ filename 	:	to seach the word starting in a file
+grep -i
+grep -n
+grep -c
+grep -v
+grep -Rw ‘word’
+grep  ^’word’  filename
+Sed display
+Sed -n  “5p” file name
+Sed -n “10,15p”filename
+Sed -n “10p (ENTER) 15p” filename
+Sed hide/delete -temporary
+Sed  “5p” filename
+Sed  “5,10d” filename
+Sed “10d filename (ENTER) 20d” filename
+Run Levels
+Init 0 				:	shutdown mode
+Init 1				:	single user mode 
+Init 2				:	multi user mode 
+Init 4				:	reserved/Unreserved
+Init 5				:	multi user mode GUI
+Init 6				: 	restart mode
+Who -r				;	sysyem boot 
+
